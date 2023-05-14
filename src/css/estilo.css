@@ -1,0 +1,165 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: rgb(95, 92, 92);
+    color: #DCDCDC;
+}
+
+body.modo-escuro{
+    background-color: black;
+    color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+header > a {
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+ul .sobre:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: red;
+}
+
+.search-box {
+    background-color: #363636;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.search-txt {
+    background: none;
+    border: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #DCDCDC;
+}
+
+
+header .imagem-botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+}
+
+header .imagem-botao:hover,
+main .cartao-anime:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;    
+}
+
+main .listagem-animes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-anime {
+    background-color: #363636;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-anime:hover {
+    background-color: #1C1C1C;
+
+}
+
+li > img.gif {
+    width: 165px;
+}
+
+main .cartao-anime .informacoes {
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    padding: 4px;
+
+}
+
+main .cartao-anime .informacoes span{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+main .cartao-anime .tipos {
+    display: flex;
+    gap: 10px;
+}
+
+main .cartao-anime .tipo{
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.acao {
+    background-color: rgb(161, 18, 18);
+}
+
+.aventura {
+    background-color: rgb(192, 157, 0);
+}
+
+.sobrenatural {
+    background-color: black;
+}
+
+.esporte {
+    background-color: rgb(28, 184, 231);
+}
+
+.comedia {
+    background-color: orangered;
+}
+
+.drama {
+    background-color: gray;
+}
+
+.ficcao {
+    background-color: green;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 6px;
+}
+
+.logo-a {
+    font-size: 10px;
+}

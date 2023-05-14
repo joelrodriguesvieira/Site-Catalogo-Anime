@@ -1,0 +1,13 @@
+@media screen and (max-width: 900px) {
+    nav > ul {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+}

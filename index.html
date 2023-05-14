@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeFlix - Início</title>
+
+    <link rel="shortcut icon" href="src/imgs/letra-a.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Poppins:wght@300;500;800&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/estilo.css">
+    <link rel="stylesheet" href="src/css/scrollbar.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+
+<body class="modo-escuro">
+    <header class="cabecalho">
+        <a href="#">
+            <h1 class="logo" >AnimeFlix</h1>
+        </a>
+        <nav>
+            <ul>
+                <li class="sobre">Início</li>
+                <li class="sobre">Lista de Animes</li>
+                <li class="sobre">Episódios</li>
+                <li class="sobre">Sobre</li>
+            </ul>
+        </nav>
+
+        <div id="form" class="search-box">
+            <input id="search-bar" type="text" class="search-txt" placeholder="Pesquisar" name="search-bar" onkeyup="search()">
+            <a href="#" class="search-btn">
+                <img src="./src/imgs/loupe-white.svg" alt="" width="20px" height="20px">            
+            </a>
+        </div>
+    
+    </header>
+    <main>
+        <ul id="my-list" class="listagem-animes">
+            <li class="cartao-anime">
+                <div class="informacoes">
+                    <span>Naruto</span>
+                </div>
+
+                <img src="./src/imgs/naruto.jpg" alt="Naruto Clássico" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo acao">Ação</li>
+                    <li class="tipo aventura">Aventura</li>
+                </ul>
+
+                <p class="descricao">O anime segue as aventuras de Naruto Uzumaki, um garoto determinado a se tornar um Hokage, o ninja em
+                    sua vila que é conhecido como o líder e o mais forte de todos.</p>
+            </li>
+
+            <li class="cartao-anime">
+                <div class="informacoes">
+                    <span>Chainsaw Man</span>
+                </div>
+
+                <img src="./src/imgs/chainsawmen.jpg" alt="Chainsaw Man" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo sobrenatural">Sobrenatural</li>
+                </ul>
+
+                <p class="descricao">Denji, um garoto que vive na miséria que sobrevive exterminando outros demônios com Pochita para
+                    pagar as contas.Até que, um dia, ele é traído e morre. Em seus últimos momentos, ele firma um
+                    contrato com Pochita e renasce como o Homem-Motosserra - um humano com coração de demônio.</p>
+            </li>
+
+            <li class="cartao-anime">
+                <div class="informacoes">
+                    <span>Boku no Hero</span>
+                </div>
+
+                <img src="./src/imgs/Boku-no-Hero.jpg" alt="Boku no Hero Academia" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo acao">Ação</li>
+                    <li class="tipo comedia">Comédia</li>
+                </ul>
+
+                <p class="descricao">Izuku sonhou ser um heroi,porém um tanto desafiador para um garoto sem superpoderes.Em um mundo
+                    onde 80% da população tem algum tipo de Dom especial, Izuku teve a má sorte de nascer completamente
+                    normal.Mas isso não vai impedi-lo de se matricular em uma das academias de herois.</p>
+            </li>
+
+            <li class="cartao-anime">
+                <div class="informacoes">
+                    <span>Haikyuu</span>
+                </div>
+
+                <img src="./src/imgs/Haikyuu-To-The-Top.jpg" alt="Haikyuu" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo esporte">Esporte</li>
+                    <li class="tipo comedia">Comédia</li>
+                </ul>
+
+                <p class="descricao">Hinata Shoyou, um garoto que inspirado em um atleta de vôlei do seu bairro, decide começar a jogar vôlei.Porém, no seu Ensino Médio, ele encontra um antigo rival dele na mesma escola que ele.Juntos, ele comandarão a Karasuno rumo ao Nacional.
+                </p>
+            </li>
+
+            
+            <li class="cartao-anime">
+                <div class="informacoes">
+                    <span>Demon Slayer</span>
+                </div>
+
+                <img src="./src/imgs/demon-slayer.jpg" alt="Demon Slayer" class="gif">
+                
+                <ul class="tipos">
+                    <li class="tipo acao">Ação</li>
+                    <li class="tipo sobrenatural">Sobrenatural</li>
+                </ul>
+
+                <p class="descricao">Tanjiro descobre que sua família foi massacrada
+                    por um demônio.E pra piorar, Nezuko, sua irmã mais nova e única sobrevivente, também foi
+                    transformada num demônio.Arrasado com esta sombria realidade, Tanjiro decide se tornar um matador
+                    de demônios para fazer sua irmã voltar a ser humana.
+                </p>
+            </li>
+
+            <li class="cartao-anime">
+                <div class="informacoes">
+                    <span>Jujutsu Kaizen</span>
+                </div>
+                
+                <img src="./src/imgs/jujutsu.jpg" alt="Jujutsu Kaizen" class="gif">
+                
+                <ul class="tipos">
+                    <li class="tipo acao">Ação</li>
+                    <li class="tipo sobrenatural">Sobrenatural</li>
+                </ul>
+                
+                <p class="descricao">Jujutsu Kaisen Yuji é um gênio do atletismo, mas não tem interesse algum em ficar correndo em
+                    círculos.Ele é feliz como membro no Clube de Estudo de Fenômenos Psíquicos.Apesar de estar no
+                    clube apenas por diversão, tudo fica sério quando um espírito de verdade aparece na escola.A vida
+                    está prestes a se tornar muito interessante na Escola Sugisawa</p>
+            </li>
+            
+            <li class="cartao-anime">
+                <div class="informacoes">
+                    <span>Ahiru no Sora</span>
+                </div>
+
+                <img src="./src/imgs/ahiru-no-sora.jpg" alt="Ahiru no Sora" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo esporte">Esporte</li>
+                    <li class="tipo comedia">Comédia</li>
+                </ul>
+
+                <p class="descricao">Ele pode não ser tão alto, mas Sora Kurumatani voa na quadra de basquete! Herdando de sua mãe a
+                    paixão pelo esporte, Sora jura para si mesmo que vai alcançar o topo do pódio no torneio de basquete
+                    colegial.Se não fosse por um problema: o clube de basquete de seu colégio se tornou um bando de
+                    delinquentes</p>
+            </li>
+
+            <li class="cartao-anime">
+                <div class="informacoes">
+                    <span>Blue Lock</span>
+                </div>
+
+                <img src="./src/imgs/blue-lock-date-sortie.jpeg" alt="Blue Lock" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo esporte">Esporte</li>
+                </ul>
+
+                <p class="descricao">Após sofrer um vexame na Copa do Mundo de 2018, a seleção japonesa sofre para se recompor.Com o
+                    intuito de criar um atacante com fome de bola e sede de vitória, capaz de virar jogos tidos como
+                    impossíveis, a Confederação Japonesa de Futebol reune centenas de jovens vão se enfrentar numa
+                    batalha de músculos e de egos para provar que são os melhores.</p>
+            </li>
+
+            <li class="cartao-anime">
+                <div class="informacoes">
+                    <span>Boruto</span>
+                </div>
+
+                <img src="./src/imgs/boruto.jpg" alt="Boruto" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo acao">Ação</li>
+                    <li class="tipo aventura">Aventura</li>
+                </ul>
+
+                <p class="descricao">Naruto era um jovem shinobi com um talento incorrigível para travessuras. Ele conseguiu seu sonho de
+                    se
+                    tornar o maior ninja da aldeia e seu rosto fica no topo do monumento Hokage.Mas esta não é a sua
+                    história. Uma nova geração de ninjas estão prontos para subir ao palco, liderados pelo próprio filho
+                    de
+                    Naruto, Boruto!</p>
+            </li>
+
+            <li class="cartao-anime">
+                <div class="informacoes">
+                    <span>Tokyo Revengers</span>
+                </div>
+
+                <img src="./src/imgs/tokyo-revengers.jpg" alt="Tokyo Revengers" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo acao">Ação</li>
+                    <li class="tipo drama">Drama</li>
+                </ul>
+
+                <p class="descricao">A vida de Takemichi Hanagaki está ruim.Se perguntando onde tudo deu errado, Takemichi de repente se
+                    viu viajando no tempo, parando 12 anos no passado.Percebendo que tem uma chance de salvá-la, Takemichi resolve se infiltrar na Gangue Manji de
+                    Tóquio e reescrever o futuro e salvar Hinata de seu trágico destino.</p>
+            </li>
+
+            <li class="cartao-anime">
+                <div class="informacoes">
+                    <span>Dragon Ball Z</span>
+                </div>
+
+                <img src="./src/imgs/dragon-ball.jpg" alt="Dragan Ball Z" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo acao">Ação</li>
+                    <li class="tipo aventura">Aventura</li>
+                </ul>
+
+                <p class="descricao">Cinco anos após Goku ter derrotado Piccolo. Goku está mais velho e se casou com Chichi, como havia prometido no ultimo Tenkaichi Budokai de Dragon Ball.Em Dragon Ball Z as histórias não são mais tão humorísticas e começam a ter mais ação.</p>
+            </li>
+
+            <li class="cartao-anime">
+                <div class="informacoes">
+                    <span>Dr Stone</span>
+                </div>
+
+                <img src="./src/imgs/dr-stone.jpg" alt="Dr Stone" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo acao">Ação</li>
+                    <li class="tipo ficcao">Ficção</li>
+                </ul>
+
+                <p class="descricao">Em um instante, todos os humanos do mundo viraram pedra.Este acontecimento misterioso envolveu o estudante Taiju, depois de milhares de anos, ele e o seu amigo Senku despertam e decidem reconstruir a civilização do zero</p>
+            </li>
+
+            <li class="cartao-anime">
+                <div class="informacoes">
+                    <span>Attack on Titã</span>
+                </div>
+
+                <img src="./src/imgs/attack-on-tita.jpg" alt="Attack on Titã" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo acao">Ação</li>
+                    <li class="tipo drama">Drama</li>
+                </ul>
+
+                <p class="descricao">A história de Ataque dos Titãs gira em torno de uma humanidade que vem sendo exterminada por titãs. Porém alguns seres humanos estão dispostos a mudar história e formar um exército de ataque aos seres assassinos.É assim que entra Eren, nosso protagonista, que após ver sua mãe ser devorada por um titã, decide que não deixará nenhum deles vivo e buscará sua vingança completa.</p>
+            </li>
+
+            <li class="cartao-anime">
+                <div class="informacoes">
+                    <span>Nanatsu no Taizai</span>
+                </div>
+
+                <img src="./src/imgs/nanatsu-no-taizai.jpg" alt="Nanatsu no Taizai" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo acao">Ação</li>
+                    <li class="tipo aventura">Aventura</li>
+                </ul>
+
+                <p class="descricao">A história segue os “Sete Pecados Capitais”, um grupo maligno de cavaleiros que conspiraram para derrubar o reino de Britânia, supostamente foram erradicados pelos Cavaleiros Divinos, embora ainda existam rumores de que eles estão vivos. Dez anos depois, os Cavaleiros Divinos realizaram um golpe de estado e assassinaram o rei, se tornando os novos e tiranos governantes do reino. Elizabeth, a única filha do rei, sai em uma jornada para encontrar os “Sete Pecados Capitais”, e recrutá-los para que possam ajudar a tomar o reino de volta.</p>
+            </li>
+
+            <li class="cartao-anime">
+                <div class="informacoes">
+                    <span>Hajime no Ippo</span>
+                </div>
+
+                <img src="./src/imgs/hajime-no-ippo.png" alt="Hajime no Ippo" class="gif">
+
+                <ul class="tipos">
+                    <li class="tipo esporte">Esporte</li>
+                    <li class="tipo comedia">Comédia</li>
+                </ul>
+
+                <p class="descricao">Makunouchi Ippo é um garoto de 16 anos bastante tímido, trabalha com sua mãe que possui uma loja que aluga barco para pescaria. Devido ao trabalho, ele nunca possui tempo livre para praticar esportes e fazer amigos.Um certo dia uns garotos de seu colégio o cercam no caminho de casa, e começam a bater em Ippo, até que aparece um famoso boxeador Takamura Mamoru, para salvá-lo. Impressionado com a força de Takamura, Ippo pede para ser treinado e aprender boxe.</p>
+            </li>
+        </ul>
+        <br>
+
+        <div class="logo-a"> Ícones feitos por <a class="logo-a" href="https://www.flaticon.com/br/autores/omen-media" title="Omen Media"> Omen Media </a> from <a class="logo-a" href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com'</a></div>
+    </main>
+</body>
+
+</html>
